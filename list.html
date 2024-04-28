@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Different types of Lists</title>
+    <style>
+        li{
+            text-decoration:none;
+            background-color: rgb(138, 212, 212);
+           margin-bottom :10px;
+        }
+    ul{
+        list-style-type:none;
+        padding:0;
+    }
+    ul li{
+    background-color: rgb(235, 181, 181);
+    margin-bottom:10px;
+    padding-left:20px;
+    }
+
+    ul li:before{
+        content:"\25A0";  
+    }
+    .underline{
+        text-decoration:underline;
+    }
+    </style>
+   
+</head>
+<body>
+    <h1 class="underline">Converted circular bullet to rectangular</h1>
+<ul>
+    <li>Web Technology</li>
+    <li>System Analysis and design</li>
+    <li>Database</li>
+</ul>
+<p>Following are the first 3 days of a week:</p>
+<ol type="i">
+<li>Sunday</li>
+<li>Monday</li>
+<li>Tuesday</li>
+</ol>
+<dl>
+<dt>Web tech:</dt>
+<dd>It is very trending these days!</dd>
+
+
+</dl>
+    
+</body>
+</html>
