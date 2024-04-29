@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternate Table Colors</title>
+    <style>
+        
+        .panel{
+            border:2px solid pink;
+            height:auto;
+            width:auto;
+        }
+        #left_pannel{
+            background-color: red;
+        }
+        #content-pannel{
+            background-color: aquamarine;
+        }
+        #right-pannel{
+            background-color: greenyellow;
+        }
+        tr:nth-child(even){
+            background-color:plum;
+        }
+        tr:nth-child(odd){
+            background-color:skyblue;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" cellspacing="5px" cellpadding="5px">
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Phone</th>
+        </tr>
+        <tr>
+            <td>1001</td>
+            <td>Ram</td>
+            <td>kathmandu</td>
+            <td>9888888888</td>
+        </tr>
+        <tr>
+            <td>1002</td>
+            <td>shyam</td>
+            <td>Birgunj</td>
+            <td>123456789</td>
+        </tr>
+        <tr>
+            <td>1003</td>
+            <td>haribahadur</td>
+            <td>Gorkha</td>
+            <td>9876544321</td>
+        </tr>
+        
+    </table>
+   <div id="left_panel" class="pannel"></div>
+   <div id="content_panel" class="pannel"></div>
+   <div id="right_panel" class="pannel"></div>
+    
+</body>
+</html>
