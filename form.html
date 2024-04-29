@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Registration Form</title>
+    <style>
+        .form-element{
+           
+            margin-bottom:5px;
+            border-radius:5%;
+            padding:5px;
+            
+        }
+
+        #submit_btn{
+            background-color: green;
+            
+            padding:3px;
+            float:right;
+            border-radius:10px;
+            margin-right:160px;
+        }
+        #submit_btn:hover{
+            background-color:rgb(143, 143, 210);
+        }
+        
+        form{
+            width:400px;
+            margin-left:25%;
+            margin-top: 10%;
+            border:1px solid black;
+
+            
+        }
+        body{
+            background-color:beige;
+        }
+
+        
+        label {
+            display:inline-block;
+            width: 100px; 
+            margin-right: 10px; 
+            vertical-align: top; }
+        
+        
+
+    </style>
+  
+
+</head>
+<body>
+    <form action="" method="">
+        <div class="form-element">
+        <label>First Name</label>
+        <input type="text" name="first_name" id="first_name">
+    </div>
+    <div class="form-element">
+        <label>Last Name</label>
+        <input type="text" name="last_name" id="last_name">
+    </div>
+    <div class="form-element">
+    <label>Email</label>
+    <input type="email" name="email" id="email">
+</div>
+<div class="form-element">
+    <label>Password</label>
+    <input type="password" name="password" id="password">
+</div>
+<div class="form-element">
+    <label>Gender</label>
+    <input type="radio" name="gender" value="male">Male
+    <input type="radio" name="gender"  value="female">Female
+</div>
+    <div class="form-element">
+        <label>Education</label>
+        <input type="checkbox" name="11" value="L1">SEE
+        <input type="checkbox" name="12" value="L2">Plus2
+        <input type="checkbox" name="13" value="Bachelors">Bachelors
+        <input type="checkbox" name="masters" value="masters">Masters
+    </div>
+    <div class="form-element">
+        <label>Zone</label>
+        <select>
+            <option value="bagmati">Bagmati Pradesh</option>
+            <option value="gandaki">gandaki Pradesh</option>
+        </select>
+
+    </div>
+    <div class="form-element">
+        <input type="submit"  value="Register"name="submit_btn" id="submit_btn">
+    
+    </div>
+    </form>
+    
+</body>
+</html>
