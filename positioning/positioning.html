@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Positioning</title>
+    <style>
+        .box{
+            width:200px;
+            height:200px;
+            border:1px solid black;
+            margin:2px;
+            display:inline-block;
+        }
+        #box3{
+            position:fixed;
+            /* top:34px; */
+            right:4px;
+            bottom:5px;
+            color:white;
+            background-color:black;
+            border:2px solid orange;
+            
+        }
+        #box3 a{
+            color:white;
+        }
+        #box3 a:hover{
+            color:blue;
+        }
+        #box1{
+            position:relative;
+            background-color:pink;
+            bottom:6px;
+        }
+        #box2
+        {
+            position:absolute;
+            background-color:tomato;
+            bottom:4px;
+            left:0px;
+        }
+        #box4{
+            position:sticky;
+            background-color: brown;
+            right:10px;
+            top:0px;
+        }
+
+
+        .container{
+            border:1px solid black;
+            height:2000px;
+        }
+        body{
+            background-image:url("wall.jpg");
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    
+    <div class="box" id="box1">box 1</div>
+    <div class="box" id="box2">box2</div>
+    <div class="box" id="box3">(dummy chatbox)<br><a href="https://chat.openai.com/">Ask your queries here!⬇️</a></div>
+    <div class="box" id="box4">box4</div>
+</div>
+    
+</body>
+</html>
