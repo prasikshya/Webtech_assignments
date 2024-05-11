@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>showhide</title>
+    <style>
+        button:hover{
+            background-color:balck;
+            color:tomato;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="showButton">Show</button>
+    <button id="hideButton" style="display:none;">Hide</button>
+ 
+    
+<script>
+    document.getElementById("showButton").addEventListener("click",function(){
+    document.getElementById("showButton").style.display="none";
+    document.getElementById("hideButton").style.display="inline-block";
+});
+
+document.getElementById("hideButton").addEventListener("click",function(){
+    document.getElementById("hideButton").style.display="none";
+    document.getElementById("showButton").style.display="inline-block";
+})
+</script>
+</body>
+</html>
