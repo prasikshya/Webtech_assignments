@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Hide</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(234, 156, 233);
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+    <button id="showButton">Show</button>
+    <button id="hideButton" style="display:none;">Hide</button>
+    
+    <div class="box" id="myBox">This is a box</div>
+    
+<script>
+    document.getElementById("showButton").addEventListener("click", function(){
+        document.getElementById("showButton").style.display = "none";
+        document.getElementById("hideButton").style.display = "inline-block";
+        document.getElementById("myBox").style.display = "block";
+    });
+
+    document.getElementById("hideButton").addEventListener("click", function(){
+        document.getElementById("hideButton").style.display = "none";
+        document.getElementById("showButton").style.display = "inline-block";
+        document.getElementById("myBox").style.display = "none";
+    });
+</script>
+</body>
+</html>
