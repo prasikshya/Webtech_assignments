@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle</title>
+    <style>
+        div{
+            height:200px;
+            width:300px;
+            background-color:blueviolet;
+        }
+    </style>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#box").toggle();
+                if($("#box").is(":visible")) {
+                    $(this).text("HIDE");
+                } else {
+                    $(this).text("SHOW");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+    <button>SHOW</button>
+</body>
+</html>
